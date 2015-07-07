@@ -43,12 +43,6 @@
     $timer_template.clone(true, true).toggleClass('timer_template timer').appendTo("#timers");
   });
 
-  var $timer_template = $('.timer_template');
-  var createNew = document.getElementById("createButton");
-  createNew.addEventListener('click', function() {
-    $timer_template.clone(true, true).toggleClass('timer_template timer').appendTo("#timers");
-  });
-
   $('body').on('click', '.startButton', function(e) {
     var $this = $(e.target);
     var $this_timer = $this.parents('.timer');
