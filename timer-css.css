@@ -1,0 +1,78 @@
+body {
+  position: relative;
+  background-color: #464849;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+h1 {
+  color: #89D7ED;
+  font-size: 4.5em;
+  font-family: monospace;
+  width: 552px;
+  margin: 20px auto;
+  background-color: rgba(0, 5, 1, 0.25);
+  border: 1px solid rgba(242, 239, 5, .8);
+}
+h3 {
+  text-align: center;
+  font-family: monospace;
+  font-size: 2em;
+  border-bottom: 1px solid #F0EE0B;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+.timer {
+  margin-bottom: 50px;
+}
+.timer_template {
+  display: none;
+}
+.inputFields {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: table;
+}
+input {
+  width: 150px;
+  height: 50px;
+  background-color: rgba(224, 249, 9, 0.35);
+  color: #6A5A5B;
+  font-size: 2em;
+  text-align: center;
+  margin: 5px;
+  font-family: monospace;
+  border: 1px solid #000;
+}
+input, select, textarea{
+    color: #000;
+}
+textarea:focus, input:focus {
+    color: #fff;
+}
+button {
+  /*width:55px;*/
+  height: 30px;
+  font-family: monospace;
+  font-size: 1em;
+  background-color: rgba(245, 243, 242, 0.56);
+  border: 1px solid #000;
+  cursor: pointer;
+}
+button.hidden {
+  display: none;
+}
+.controls {
+  text-align: center;
+  margin-top: 5px;
+}
+span {
+  font-size: 2.5em;
+}
+#alertDisplay {
+  font-family: monospace;
+  font-size: 2em;
+  color: rgb(242, 239, 5);
+}
