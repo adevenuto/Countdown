@@ -4,7 +4,11 @@
 <meta charset="utf-8" />
 <meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1" />
 <title>Kitchen Timer</title>
+
 <link rel="stylesheet" href="timer-css.css" />
+
+<link rel="stylesheet" href="/stylesheets/timer.css" />
+
 </head>
 <body>
   <h1>Countdown Timer</h1>
@@ -32,9 +36,16 @@
 
 <script type="application/javascript">
 
+
   var $timer_template = $('.timer_template');
   var createNew = document.getElementById("createButton");
 
+  createNew.addEventListener('click', function() {
+    $timer_template.clone(true, true).toggleClass('timer_template timer').appendTo("#timers");
+  });
+
+  var $timer_template = $('.timer_template');
+  var createNew = document.getElementById("createButton");
   createNew.addEventListener('click', function() {
     $timer_template.clone(true, true).toggleClass('timer_template timer').appendTo("#timers");
   });
@@ -72,6 +83,10 @@
       showHide(timer);
       doCountDown(timer);
     }
+  }
+
+  function showHide(timer) {
+    timer.find('button').toggleClass('hidden');
   }
 
   function showHide(timer) {
@@ -166,3 +181,8 @@
 
 
 
+=======
+</script>
+</body>
+</html>
+>>>>>>> gh-pages
