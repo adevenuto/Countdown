@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1" />
-<title>Kitchen Timer</title>
+<title>CountDown</title>
 
 <link rel="stylesheet" href="timer-css.css" />
 
@@ -30,6 +31,7 @@
       <button class="resetButton hidden">Reset</button>
       <button class="pauseButton hidden">Pause</button>
     </div>
+    <div class="closeTimer">&#10005</div>
   </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -47,6 +49,12 @@
     var $this = $(e.target);
     var $this_timer = $this.parents('.timer');
     startTimer($this_timer);
+  });
+
+  $('body').on('click', '.closeTimer', function(e) {
+    var $this = $(e.target);
+    var $this_timer = $this.parents('.timer');
+    $this_timer.remove();
   });
 
   $('body').on('click', '.resetButton', function(e) {
