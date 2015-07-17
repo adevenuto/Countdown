@@ -29,10 +29,13 @@ h3 {
   display: none;
 }
 .inputFields {
+  border: 1px solid #fff;
   position: relative;
   margin: 0 auto;
   margin-top: 100px;
   display: table;
+   /*-webkit-transition-property: border;
+   -webkit-transition-duration: 1000ms, 1000ms, 1000ms, 1000ms;*/
 }
 input {
   width: 150px;
@@ -43,7 +46,7 @@ input {
   text-align: center;
   margin: 5px;
   font-family: monospace;
-  border: 2px solid #235C94;
+  /*border: 2px solid #235C94;*/
 }
 ::-webkit-input-placeholder { /* WebKit browsers */
     color:    #fff;
@@ -81,6 +84,7 @@ button.hidden {
 .controls {
   text-align: center;
   margin-top: 5px;
+  display: -webkit-inline-box;
 }
 span {
   font-size: 2.5em;
@@ -92,18 +96,36 @@ span {
   color: rgb(242, 239, 5);
 }
 .closeTimer {
-  border: 2px solid red;
-  color: red;
+  border: 2px solid #fff;
+  color: #fff;
   border-radius: 13px;
   height: 23px;
   width: 23px;
-  display: inline-block;
+  display: block;
   text-align: center;
-  /*background-color: rgb(140, 141, 142);*/
   line-height: 24px;
   cursor: pointer;
-  margin-top: 15px;
+  margin: 10px auto;
 }
+.closeTimer:hover {
+  border: 2px solid red;
+  color: red;
+  -webkit-transition: color 1000ms linear;
+    -moz-transition: color 1000ms linear;
+    -o-transition: color 1000ms linear;
+    -ms-transition: color 1000ms linear;
+    transition: color 1000ms linear;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, .2);
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
+
 @media (max-width: 530px) {
   input {
     width: 105px;
