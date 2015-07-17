@@ -1,15 +1,6 @@
-html {
-  height: 100%;
-  background: url(beach.jpg) no-repeat center center;
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  background-size:cover;
-}
-
 body {
   position: relative;
-  /*background-color: #8C8D8E;*/
+  background-color: #8C8D8E;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -22,7 +13,6 @@ h1 {
   width: 552px;
   margin: 20px auto;
   background-color: rgba(0, 5, 1, 0.6);
-  /*border: 1px solid rgba(242, 239, 5, .8);*/
 }
 h3 {
   text-align: center;
@@ -47,7 +37,7 @@ h3 {
 input {
   width: 150px;
   height: 50px;
-  background-color: rgba(213, 189, 131, 0.21);
+  background-color: rgba(213, 189, 131, .1);
   color: #fff;
   font-size: 2em;
   text-align: center;
