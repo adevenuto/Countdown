@@ -115,3 +115,9 @@ span {
     margin: 20px auto;
   }
 }
+@media (max-width: 400px) {
+  input {
+    width: 90px;
+    font-size: 1.5em;
+  }
+}
