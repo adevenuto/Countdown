@@ -1,7 +1,1 @@
-Countdown Timer
-
-Counts down.
-
-More Changes.
-
-Even More.
+Countdown timer was a fun little side project to become more familiar with javascript and jQuery.
